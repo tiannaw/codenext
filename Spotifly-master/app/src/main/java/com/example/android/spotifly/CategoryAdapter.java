@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -14,9 +15,9 @@ import androidx.annotation.Nullable;
 
 import static com.example.android.spotifly.R.id.list_item_name;
 
-public class CategoryAdapter extends ArrayAdapter<CategoryAdapter> {
+public class CategoryAdapter extends ArrayAdapter<CategoryItem> {
 
-    public CategoryAdapter(Context context, ArrayList list){
+    public CategoryAdapter(Context context, ArrayList<CategoryItem> list){
         super(context, 0, list);
     }
 
